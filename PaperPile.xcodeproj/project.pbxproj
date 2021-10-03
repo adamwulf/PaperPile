@@ -13,6 +13,10 @@
 		C505444F270A57C3009E4FA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C505444D270A57C3009E4FA9 /* Main.storyboard */; };
 		C5054451270A57C6009E4FA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5054450270A57C6009E4FA9 /* Assets.xcassets */; };
 		C5054454270A57C6009E4FA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5054452270A57C6009E4FA9 /* LaunchScreen.storyboard */; };
+		C505445D270A5829009E4FA9 /* PageCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = C505445C270A5829009E4FA9 /* PageCollectionView */; };
+		C505445F270A5887009E4FA9 /* HostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C505445E270A5887009E4FA9 /* HostViewController.swift */; };
+		C5054461270A588E009E4FA9 /* SampleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5054460270A588D009E4FA9 /* SampleObject.swift */; };
+		C5054463270A5897009E4FA9 /* SimpleImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5054462270A5897009E4FA9 /* SimpleImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,9 @@
 		C5054450270A57C6009E4FA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5054453270A57C6009E4FA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5054455270A57C6009E4FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C505445E270A5887009E4FA9 /* HostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostViewController.swift; sourceTree = "<group>"; };
+		C5054460270A588D009E4FA9 /* SampleObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleObject.swift; sourceTree = "<group>"; };
+		C5054462270A5897009E4FA9 /* SimpleImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C505445D270A5829009E4FA9 /* PageCollectionView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +64,9 @@
 		C5054446270A57C3009E4FA9 /* PaperPile */ = {
 			isa = PBXGroup;
 			children = (
+				C5054460270A588D009E4FA9 /* SampleObject.swift */,
+				C5054462270A5897009E4FA9 /* SimpleImageCell.swift */,
+				C505445E270A5887009E4FA9 /* HostViewController.swift */,
 				C5054447270A57C3009E4FA9 /* AppDelegate.swift */,
 				C5054449270A57C3009E4FA9 /* SceneDelegate.swift */,
 				C505444B270A57C3009E4FA9 /* ViewController.swift */,
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = PaperPile;
+			packageProductDependencies = (
+				C505445C270A5829009E4FA9 /* PageCollectionView */,
+			);
 			productName = PaperPile;
 			productReference = C5054444270A57C3009E4FA9 /* PaperPile.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = C505443B270A57C3009E4FA9;
+			packageReferences = (
+				C505445B270A5829009E4FA9 /* XCRemoteSwiftPackageReference "PageCollectionView" */,
+			);
 			productRefGroup = C5054445270A57C3009E4FA9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C505445F270A5887009E4FA9 /* HostViewController.swift in Sources */,
 				C505444C270A57C3009E4FA9 /* ViewController.swift in Sources */,
 				C5054448270A57C3009E4FA9 /* AppDelegate.swift in Sources */,
+				C5054463270A5897009E4FA9 /* SimpleImageCell.swift in Sources */,
 				C505444A270A57C3009E4FA9 /* SceneDelegate.swift in Sources */,
+				C5054461270A588E009E4FA9 /* SampleObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C505445B270A5829009E4FA9 /* XCRemoteSwiftPackageReference "PageCollectionView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamwulf/PageCollectionView.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C505445C270A5829009E4FA9 /* PageCollectionView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C505445B270A5829009E4FA9 /* XCRemoteSwiftPackageReference "PageCollectionView" */;
+			productName = PageCollectionView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C505443C270A57C3009E4FA9 /* Project object */;
 }

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PageCollectionView",
+        "repositoryURL": "https://github.com/adamwulf/PageCollectionView.git",
+        "state": {
+          "branch": "main",
+          "revision": "8477a6abd3f367062fe6f79d6fb9c459e0a8f3ea",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
