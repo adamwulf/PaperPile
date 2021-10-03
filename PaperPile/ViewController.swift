@@ -38,7 +38,8 @@ class ViewController: PageCollectionViewController, UICollectionViewDataSourceSh
                 obj.idealSize = CGSize(width: 612, height: 792)
             }
 
-            obj.physicalScale = 1.4
+            // 264 ppi for iPad screen / 2x screen scale / 72 dpi of PDF == 1.83
+            obj.physicalScale = 1.83
             arr.append(obj)
         }
 
